@@ -71,10 +71,6 @@ body {
   cursor: pointer;
 }
 
-.icon {
-  display: block;
-}
-
 .header {
   border-bottom: 1px solid var(--border-color);
 }
@@ -212,8 +208,8 @@ body {
   background: var(--icon-wrapper-color);
   border-radius: 4px;
   margin-bottom: 8px;
-  padding: 24px 100px;
-
+  padding: 24px 0;
+  text-align: center;
 }
 
 .advantages .list .title {
@@ -267,15 +263,8 @@ body {
   justify-content: center;
 }
 
-.team .caption .list-item {
-  width: 40px;
-  height: 40px;
-}
-
 .team .caption .link {
   display: block;
-  width: 100%;
-  height: 100%;
   background: var(--icon-bg);
   border-radius: 50%;
   padding: 12px;
@@ -283,6 +272,10 @@ body {
 
 .team .caption .link:hover, .team .caption .link:focus {
   background: var(--link-color-blue);
+}
+
+.team .caption .icon, .footer .social-media .icon  {
+  display: inherit;
 }
 
 .team .list .title {
@@ -296,9 +289,13 @@ body {
 .costumers {
   padding: 130px 0 120px;
 }
+.costumers .list-item {
+  flex-basis: calc(16.66667% - 20px);
+}
 
 .costumers .link {
-  padding: 16px 32px;
+  text-align: center;
+  padding: 16px 0;
   display: block;
   border: 1px solid var(--customers-link-color);
   border-radius: 4px;
@@ -351,6 +348,7 @@ body {
 .portfolio .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 48px 24px;
 }
 
@@ -411,15 +409,8 @@ body {
   gap: 16px;
 }
 
-.footer .social-media .list-item {
-  width: 40px;
-  height: 40px;
-}
-
 .footer .social-media .link {
   display: block;
-  width: 100%;
-  height: 100%;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   padding: 12px;
