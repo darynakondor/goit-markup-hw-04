@@ -337,8 +337,7 @@ body {
 }
 
 .portfolio .btn:hover,
-.portfolio .btn:focus,
-.portfolio .current {
+.portfolio .btn:focus {
   border: 1px solid var(--btn-active);
   background: var(--btn-active);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -354,6 +353,7 @@ body {
 
 .portfolio .link {
   color: inherit;
+  display: block;
 }
 
 .portfolio .portfolio-list .title {
@@ -367,7 +367,7 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio .link:hover .caption {
+.portfolio .link:hover .caption, .portfolio .link:focus .caption {
   border: 0.5px solid var(--portfolio-border-color);
   border-top: none;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
